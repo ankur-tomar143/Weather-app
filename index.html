@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="inputContainer">
+            <input type="text" id="" name="" placeholder="Enter Location">
+            <button id="search">Search</button>
+        </div>
+    </header>
+    <main>
+        
+        <div class="weatherContainer">
+            <div class="temprature">21.2</div>
+            
+            <div class="locationDate">
+                <div class="location">Meerut</div>
+                <span class="time">12:45</span>
+                <span class="day">Monday</span>
+                <span class="date">2025-07-13</span>
+            </div>
+
+            <div class="weatherState">
+                <img class="image" src="data:image/png;base64,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" alt="">
+                <div class="condition">Sunny</div>
+            </div>
+            
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!-- 
+{
+    "location": {
+        "name": "Meerut",
+        "region": "Uttar Pradesh",
+        "country": "India",
+        "lat": 28.9833,
+        "lon": 77.7,
+        "tz_id": "Asia/Kolkata",
+        "localtime_epoch": 1748223631,
+        "localtime": "2025-05-26 07:10"
+    },
+    "current": {
+        "last_updated_epoch": 1748223000,
+        "last_updated": "2025-05-26 07:00",
+        "temp_c": 30.5,
+        "temp_f": 87,
+        "is_day": 1,
+        "condition": {
+            "text": "Partly Cloudy",
+            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png",
+            "code": 1003
+        },
+        "wind_mph": 4.5,
+        "wind_kph": 7.2,
+        "wind_degree": 93,
+        "wind_dir": "E",
+        "pressure_mb": 1004,
+        "pressure_in": 29.65,
+        "precip_mm": 0,
+        "precip_in": 0,
+        "humidity": 49,
+        "cloud": 30,
+        "feelslike_c": 32.2,
+        "feelslike_f": 90,
+        "windchill_c": 30.5,
+        "windchill_f": 87,
+        "heatindex_c": 32.2,
+        "heatindex_f": 90,
+        "dewpoint_c": 18.8,
+        "dewpoint_f": 65.8,
+        "vis_km": 10,
+        "vis_miles": 6,
+        "uv": 1,
+        "gust_mph": 5.4,
+        "gust_kph": 8.6
+    }
+} -->
